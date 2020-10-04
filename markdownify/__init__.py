@@ -157,6 +157,9 @@ class MarkdownConverter(object):
     def convert_i(self, el, text):
         return self.convert_em(el, text)
 
+    def convert_cite(self, el, text):
+        return self.convert_em(el, text)
+
     def convert_list(self, el, text):
         nested = False
         while el:
